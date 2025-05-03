@@ -1,0 +1,22 @@
+// backend is -
+// creating endpoints for handling the requests of the client (e.g., browser) at any particular route
+// handling means to process the request and send a response back to the client
+// we need to create a backend app (i.e., a server) with express.js, you can use more configs like middleware etc
+
+import express from "express";
+import path, { dirname } from "path";
+import { fileURLToPath } from "url";
+
+const app = express();
+const PORT = process.env.PORT || 5000;
+console.log("heyy world");
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+app.use(express.static(path.join(__dirname, "../public")));
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
