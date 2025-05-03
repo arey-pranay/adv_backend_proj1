@@ -10,7 +10,7 @@ import authRoutes from "./routes/authRoutes.js"; // import the authRoutes from t
 import todoRoutes from "./routes/todoRoutes.js"; // import the todoRoutes from the todoRoutes.js file
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5003;
 console.log("heyy world");
 
 const __filename = fileURLToPath(import.meta.url);
