@@ -1,0 +1,26 @@
+{
+  "name": "adv_backend_proj1",
+  "version": "1.0.0",
+  "description": "A full stack application with a backend using Node.js and Express, JWT based authentication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arey-pranay/adv_backend_proj1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/arey-pranay/adv_backend_proj1/issues"
+  },
+  "homepage": "https://github.com/arey-pranay/adv_backend_proj1#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
